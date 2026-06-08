@@ -28,3 +28,20 @@
 .nav-links a:hover {
     color: #f0a842;
 }
+
+.stats-bar {
+    display: flex;
+    background-color: #111;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.stats-bar h3 {
+    color: white;
+    font-size: 40px;
+}
+
+.stats-bar p {
+    font-size: 14px;
+    color: grey;
+}
