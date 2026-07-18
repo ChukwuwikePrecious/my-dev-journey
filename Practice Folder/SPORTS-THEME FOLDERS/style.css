@@ -1,0 +1,339 @@
+:root {
+    --primary-color:#008751;
+    --secondary-color: #ffffff;
+    --accent-color: #cc0000;
+    --dark-bg: #005c35;
+    --text-light: #ffffff;
+    --text-muted: #a8d5a2;
+    --bg-light: #f5f5f5;
+    --color-gk: #ff69b4;
+    --color-def: #ffffff;
+    --color-mid: #ffd700;
+    --color-fwd: #cc0000;
+    --font-heading: 'Rajdhani', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0c6b3d, #16a43a);
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+}
+
+.logo {
+    color: var(--text-light);
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 28px;
+    }
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.stats-bar {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.stats-bar h3 {
+    color: var(--text-light);
+    font-size: 40px;
+}
+
+.stats-bar p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.players-section {
+    padding: 60px 40px;
+    background-color: var(--dark-bg);
+    }
+
+ .section-title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    font-family: var(--font-heading);
+}
+
+.squad-legend {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    }
+
+.legend-item {
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    }
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.player-card{
+
+    background: linear-gradient(
+        145deg,
+        #0c3b21,
+        #14532d
+    );
+
+    border:1px solid #1f7a3d;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.3);
+
+    transition:.35s ease;
+}
+
+.player-card:hover{
+
+    transform:translateY(-6px);
+
+    background:linear-gradient(
+        145deg,
+        #14532d,
+        #166534
+    );
+
+    box-shadow:
+        0 18px 35px rgba(22,163,74,.35);
+}
+
+.player-position {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.gk {background-color: var(--color-gk); color: white;}
+.def {background-color: var(--color-def); color: #111;}
+.mid {background-color: var(--color-mid); color: #111;}
+.fwd {background-color: var(--color-fwd); color: white;}
+
+.player-name {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    margin-top: 8px;
+}
+
+.hero {
+    background-image: 
+    linear-gradient(rgba(0,61,36,0.85),
+    rgba(0,61,36,0.85)),
+    url('stadium1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    }
+
+
+.hero-content h1 {
+    color: var(--text-light);
+    font-size: 72px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    font-family: var(--font-heading);
+    text-shadow: 0 6px 20px rgba(0, 0, 0, .45);
+    }
+
+.hero-content p {
+    color: var(--text-light);
+    font-size: 20px;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    }
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 30px;
+    background: #22c55e;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    }
+
+.primary-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    }
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+    opacity: 0.9;
+}
+
+.secondary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+    background: rgba(255,255,255,0.1);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--text-light);
+    padding: 14px 28px;
+    border: 2px solid var(--text-light);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    }
+
+.footer {
+    background: linear-gradient(90deg, #0c6b3d, #16a34a);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid var(--color-mid);
+}
+
+.footer-logo {
+    color: var(--text-light);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    margin-top: 12px;
+}
+
+.footer-tagline {
+    color: var(--text-muted);
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.footer-copy {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .stats-bar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .players-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
